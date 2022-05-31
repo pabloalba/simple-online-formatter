@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{Simple Formatter}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <h1>{Simple Formatter}</h1>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="container">	  
+	  <div class="row" style="margin-top: 20px">
+		<div class="col-sm">
+		  <h3>Original</h3>	
+		  <textarea class="form-control" id="original" rows="30" oninput="format()"></textarea>
+		</div>
+		<div class="col-sm">
+		  <h3>Formatted</h3>	
+		  <textarea class="form-control" id="formatted" rows="30"></textarea>
+		</div>		
+	  </div>
+	</div>
+    
+    
+	<script type='text/javascript' src='formatter.js'></script>
+  </body>
+</html>
